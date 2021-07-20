@@ -9,7 +9,7 @@
   
 ## urdf_data
   * contains the urdf data generated from CAD model using https://github.com/syuntoku14/fusion2urdf.git
-  * Though do note the urdf model generated is not configured to be used out of the box in matlab and requires addition of joint frame set correctly and specifying the path of the stl files in the visual blocks
+  * Though do note the urdf model generated is not configured to be used out of the box in matlab and requires addition of joint frame set correctly and specifying the path of the stl files in the visual blocks in MATLAB
 
 
   * stl files in: urdf_data > meshes > .stl files
