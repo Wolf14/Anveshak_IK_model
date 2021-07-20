@@ -1,0 +1,19 @@
+rover_arms_learn_1_controller:
+  # Publish all joint states -----------------------------------
+  joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+
+  # Position Controllers --------------------------------------
+  base_zrotor_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: base_zrotor
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  hinge1_arm1_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: hinge1_arm1
+    pid: {p: 100.0, i: 0.01, d: 10.0}
+  hinge2_arm2_position_controller:
+    type: effort_controllers/JointPositionController
+    joint: hinge2_arm2
+    pid: {p: 100.0, i: 0.01, d: 10.0}

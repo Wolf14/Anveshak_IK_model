@@ -1,0 +1,169 @@
+<?xml version="1.0" ?>
+<robot name="rover_arms_learn_1" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find rover_arms_learn_1_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find rover_arms_learn_1_description)/urdf/rover_arms_learn_1.trans" />
+<xacro:include filename="$(find rover_arms_learn_1_description)/urdf/rover_arms_learn_1.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-0.009333400269692833 0.005264626329278374 0.02366823532762397"/>
+    <mass value="0.2599322345653659"/>
+    <inertia ixx="5.4e-05" ixy="-0.0" ixz="0.0" iyy="5.4e-05" iyz="-0.0" izz="9.2e-05"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rover_arms_learn_1_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0 0 0"/>
+    <geometry>
+      <mesh filename="package://rover_arms_learn_1_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="z_rotor1_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-4.0026969282819236e-07 -3.736707216272367e-07 0.007438866405845044"/>
+    <mass value="0.07187681685219886"/>
+    <inertia ixx="5e-06" ixy="-0.0" ixz="-0.0" iyy="5e-06" iyz="-0.0" izz="7e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.009333 -0.005265 -0.024598"/>
+    <geometry>
+      <mesh filename="package://rover_arms_learn_1_description/meshes/z_rotor1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.009333 -0.005265 -0.024598"/>
+    <geometry>
+      <mesh filename="package://rover_arms_learn_1_description/meshes/z_rotor1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="hinge_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-4.002696928160493e-07 -3.736707216298388e-07 0.003495342113363699"/>
+    <mass value="0.002323322065259032"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.009333 -0.005265 -0.038598"/>
+    <geometry>
+      <mesh filename="package://rover_arms_learn_1_description/meshes/hinge_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.009333 -0.005265 -0.038598"/>
+    <geometry>
+      <mesh filename="package://rover_arms_learn_1_description/meshes/hinge_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="arm_1">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-4.002696928108451e-07 0.001661382812545048 0.01670498203591403"/>
+    <mass value="0.02138298309788857"/>
+    <inertia ixx="2e-06" ixy="-0.0" ixz="0.0" iyy="2e-06" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.009333 -0.005265 -0.043598"/>
+    <geometry>
+      <mesh filename="package://rover_arms_learn_1_description/meshes/arm_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.009333 -0.005265 -0.043598"/>
+    <geometry>
+      <mesh filename="package://rover_arms_learn_1_description/meshes/arm_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="hinge_2">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-4.002696928108451e-07 0.0003462233981555065 0.0034781875662040357"/>
+    <mass value="0.002323322065259032"/>
+    <inertia ixx="0.0" ixy="-0.0" ixz="-0.0" iyy="0.0" iyz="-0.0" izz="0.0"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.009333 -0.00863 -0.077431"/>
+    <geometry>
+      <mesh filename="package://rover_arms_learn_1_description/meshes/hinge_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.009333 -0.00863 -0.077431"/>
+    <geometry>
+      <mesh filename="package://rover_arms_learn_1_description/meshes/hinge_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="arm_2">
+  <inertial>
+    <origin rpy="0 0 0" xyz="-4.0026969281431457e-07 0.011083945217883603 0.012608689088721967"/>
+    <mass value="0.02138298309788857"/>
+    <inertia ixx="2e-06" ixy="-0.0" ixz="0.0" iyy="1e-06" iyz="-1e-06" izz="1e-06"/>
+  </inertial>
+  <visual>
+    <origin rpy="0 0 0" xyz="0.009333 -0.009125 -0.082406"/>
+    <geometry>
+      <mesh filename="package://rover_arms_learn_1_description/meshes/arm_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin rpy="0 0 0" xyz="0.009333 -0.009125 -0.082406"/>
+    <geometry>
+      <mesh filename="package://rover_arms_learn_1_description/meshes/arm_2.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="base_zrotor" type="revolute">
+  <origin rpy="0 0 0" xyz="-0.009333 0.005265 0.024598"/>
+  <parent link="base_link"/>
+  <child link="z_rotor1_1"/>
+  <axis xyz="-0.0 -0.0 1.0"/>
+  <limit effort="100" lower="-3.141593" upper="3.141593" velocity="100"/>
+</joint>
+
+<joint name="hinge_z_rotor" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 0.0 0.014"/>
+  <parent link="z_rotor1_1"/>
+  <child link="hinge_1"/>
+</joint>
+
+<joint name="hinge1_arm1" type="revolute">
+  <origin rpy="0 0 0" xyz="0.0 0.0 0.005"/>
+  <parent link="hinge_1"/>
+  <child link="arm_1"/>
+  <axis xyz="-1.0 0.0 -0.0"/>
+  <limit effort="100" lower="-1.570796" upper="1.570796" velocity="100"/>
+</joint>
+
+<joint name="arm1-_hinge2" type="fixed">
+  <origin rpy="0 0 0" xyz="0.0 0.003365 0.033833"/>
+  <parent link="arm_1"/>
+  <child link="hinge_2"/>
+</joint>
+
+<joint name="hinge2_arm2" type="revolute">
+  <origin rpy="0 0 0" xyz="0.0 0.000495 0.004975"/>
+  <parent link="hinge_2"/>
+  <child link="arm_2"/>
+  <axis xyz="1.0 -0.0 -0.0"/>
+  <limit effort="100" lower="-1.570796" upper="1.570796" velocity="100"/>
+</joint>
+
+</robot>
