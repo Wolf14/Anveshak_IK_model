@@ -14,4 +14,4 @@
 
   * stl files in: urdf_data > meshes > .stl files
   * urdf file is basically the .xacro file generated in: urdf_data > urdf > rover_arms_learn_1.xacro
-  * .xacro file has almost same syntax as .urdf and with slight modification can be used
+  * .xacro file has almost same syntax as .urdf and with slight modification can be used.
