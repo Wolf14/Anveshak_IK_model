@@ -1,4 +1,5 @@
 # Anveshak_IK_model
+* This repository contains my attempt to implement Inverse Kinematics on a 3R arm in Simulink
 * This repo contains the files, scripts and links I used to generate the model
 
 ## CAD_model
